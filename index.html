@@ -15,6 +15,7 @@
 <body>
     <!-- Page Header-->
     <header class="page-header">
+        <div class="container">
             <nav class="page-nav">
             <a class="page-logo" href="index.html">
              <span class="text-italic"> SIMPLY</span> CHOCOLATE
@@ -31,24 +32,30 @@
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
         <!--Hero Page-->
         <section class="hero-section">
+            <div class="container hero-container">
             <h1 class="main-title" >Treat yourself or a loved one to
             our finest ingredients for a moment
             of pure delight!
              </h1>
             
-            <button class="buy-now-btn" type="button">Buy now</button>
-            <a class="how-made-link" href="#how-made">How it’s made</a>
-            <a class="scroll-down-link" href="#benefits">scroll down</a>
+             <div class="hero-content-wrapper">
+              <button class="buy-now-btn" type="button">Buy now</button>
+              <a class="how-made-link" href="#how-made">How it’s made</a>
+             <a class="scroll-down-link" href="#benefits">scroll down</a>
+            </div>
+            </div>
         </section>
 
 
         <!--Our Benefits-->
-        <section class="benefits-section" id="benefits">
-            <h2>Our Benefits</h2>
+        <section class="benefits-section section-paddings" id="benefits">
+            <div class="container benefits-container">
+            <h2 class="visually-hidden">Our Benefits</h2>
             <ul class="benefits-list">
                 <li class="benefits-list-item">
                     <h3 class="benefits-list-title">Unsurpassed taste</h3>
@@ -74,12 +81,14 @@
                     </p>
                 </li>
             </ul>
+            </div>
             </section>
 
 
             <!--Ingredients section-->
-            <section class="ingredients-section">
-                <h2 class="section-title">
+            <section class="ingredients-section section-paddings">
+                <div class="container">
+                <h2 class="section-title ingredients-section-title">
                     it all adds up to one exceptional
                     <span class="accent-color">taste</span>
                     sensation
@@ -115,19 +124,23 @@
                         <h3 class="ingredients-list-title">semi-sweet chocolate</h3>
                     </li>
                 </ul>
+                </div>
                    
             </section>
 
             <!--How it's made-->
-            <section class="how-made-section" id="how-made">
+            <section class="how-made-section section-paddings" id="how-made">
+                <div class="container">
                 <h2 class="section-title">
                     How it's <span class="accent-color">made</span>
                 </h2>
+                <div class="how-made-content-wrapper">
                 <img class="how-made-img" 
                 src="./images/how-made/how-made.jpg" 
                 alt="chocolate making process"
                 width="600"
                 height="400">
+                <div class="how-made-text-wrapper">
                 <h3 class="how-made-title">
                     Try our chocolates today and discover the perfect balance of flavor
                 </h3>
@@ -149,10 +162,14 @@
                         Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
                      </li>
                 </ul>
+                </div>
+                </div>
+                </div>
             </section>
 
             <!--Reviews Section-->
-            <section class="reviews-section" id="reviews">
+            <section class="reviews-section section-padding" id="reviews">
+                <div class="container">
                 <h2 class="section-title">
                     <span class="accent-color">Chocolate</span> is loved
                 </h2>
@@ -191,11 +208,14 @@
                     </li>
                 </ul>
                 <button class="leave-review-btn" type="button">Leave a review</button>
+                </div>
             </section>
     </main>
 
     <!--Page Footer-->
     <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer-top-block">
         <h2 class="page-footer-title">
             <span class="accent-color">Chocolate</span> a delicious cure for a bad day
             </h2>
@@ -210,7 +230,10 @@
         </li>
        </ul>
         </address>
+            </div>
 
+
+        <div class="page-footer-bottom-block">
         <nav class="page-navigation">
             <ul class="menu">
                 <li class="menu-item">
@@ -224,7 +247,8 @@
                 </li>
             </ul>
         </nav>
-
+      </div>
+        </div>
     </footer>
     
 </body>

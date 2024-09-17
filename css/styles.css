@@ -2,11 +2,18 @@
 
 ul,ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 body {
@@ -14,6 +21,7 @@ font-family: "Montserrat", sans-serif;
 background: #fafafa;
 color: #111111;
 }
+
 button {
     cursor: pointer;
 }
@@ -25,11 +33,30 @@ button {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 50px;
     
 }
 
 .accent-color {
     color: #fd9222;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1168px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-paddings {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* ================ HEADER STYLES ================ */
@@ -48,6 +75,9 @@ letter-spacing: -0.03em;
 }
 
 .menu-link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,23 +90,60 @@ letter-spacing: -0.03em;
 color: #fd9222;
 }
 
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    column-gap: 24px;
+}
 /* ================ HERO STYLES ================ */
 
+.hero-section {
+background: #1e1823;
+max-width: 1200px;
+margin-right: auto;
+margin-left: auto;
+border-radius: 30px;
+}
 
+.hero-container {
+    padding-top: 381px;
+    padding-right: 56px;
+    padding-left: 56px;
+    padding-bottom: 40px;
+    color: #ffffff;
+}
 .main-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
     
 }
 
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+}
 
 .buy-now-btn {
     font-weight: 600;
     font-size: 14px;
     color: #ffffff;
     background: #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    margin-right: 14px;
+    min-width: 144px;
+    height: 45px;
+    border: none;
+
 }
 
 .buy-now-btn:hover,
@@ -88,12 +155,22 @@ color: #fd9222;
 .how-made-link {
     font-weight: 600;
     font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    min-width: 183px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+     padding-right: 20px;
     
 }
 
 .how-made-link:hover,
 .how-made-link:focus {
     color: #fd9222;
+    border-color: #fd9222; ;
 
 }
 
@@ -102,6 +179,7 @@ color: #fd9222;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.03em;
+    margin-left: auto;
         
 }
 
@@ -116,6 +194,7 @@ color: #fd9222;
 .benefits-list-title {
     font-weight: 600;
      font-size: 18px;
+     margin-bottom: 18px;
         
 }
 
@@ -123,10 +202,54 @@ color: #fd9222;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
         
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-section {
+    background: #1e1823;
+    color: #ffffff;
+    margin-top: 72px;
+    margin-bottom: 50px;
+}
+
+.benefits-container {
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.benefits-list {
+    display: flex;
+    column-gap: 88px;
+}
+
+.benefits-list-item {
+    width: calc((100% - 2 * 88px) / 3);
+}
+
 /* ================ INGREDIENTS STYLES ================ */
+
+
+.ingredients-section-title {
+max-width: 411px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 28px;
+}
 
 .ingredients-description {
     font-weight: 400;
@@ -134,7 +257,40 @@ color: #fd9222;
     line-height: 1.29;
     letter-spacing: -0.02em;
      text-align: center;
+     max-width: 486px;
+     margin-right: auto;
+     margin-left: auto;
+     margin-bottom: 50px;
         
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
+.ingredients-list-item {
+    width: calc((100% - 72px) / 4);
+    border-radius: 15px;
+    border: 1px solid #fd9222;
+    color: #ffffff;
+    padding: 28px 32px;
+
+}
+
+.ingredients-list-item:nth-child(even) {
+color: #111111;
+background: #ffffff;
+}
+
+.ingredients-list-item:nth-child(4n+1) {
+    background: #fd9222;
+}
+
+.ingredients-list-item:nth-child(4n+3) {
+background: #1e1823;
+border: 1px solid #1e1823;
 }
 
 .ingredients-list-title {
@@ -143,18 +299,42 @@ color: #fd9222;
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+
         
 }
 
+.ingredients-list-img {
+margin-bottom: 36px;
+}
 
 /* ================ HOW MADE STYLES ================ */
 
+.how-made-content-wrapper {
+display: flex;
+column-gap: 20px;
+}
+
+.how-made-text-wrapper {
+padding: 32px;
+    border-radius: 15px;
+    padding: 32px;
+    background-color: #ffffff;
+    flex-grow: 1;
+}
 
 .how-made-title {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
+    margin-bottom: 28px;
         
+}
+.how-made-list {
+    padding-right: 26px;
+}
+
+.how-made-list-item:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .how-made-list-item {
@@ -167,11 +347,37 @@ color: #fd9222;
 
 /* ================ REVIEWS STYLES ================ */
 
+
+.reviews-section {
+    padding-bottom: 100px;
+
+}
+
+.reviews-list  {
+    display: flex;
+    column-gap: 28px;
+    margin-bottom: 50px;
+}
+
+.reviews-list-item {
+width: calc((100% - 56px) /3);
+border: 1px solid rgba(17, 17, 17, 0.1);
+ border-radius: 15px;
+box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+ background: #ffffff;
+padding: 56px 24px 24px;
+}
+
+.reviews-list-avatar {
+    margin-bottom: 18px;
+}
+
 .reviews-list-fullname {
     font-weight: 600;
     font-size: 18px;
      line-height: 1.33;
-    text-align: center
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .reviews-list-text {
@@ -180,11 +386,22 @@ color: #fd9222;
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-align: center;
+    color: rgba(17, 17, 17, 0.7);
 }
 
 .leave-review-btn {
     font-weight: 600;
     font-size: 18px;
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    min-width: 222px;
+    background-color: #ffffff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: #111111;
+    
 }
 
 .leave-review-btn:hover,
@@ -195,14 +412,27 @@ color: #fd9222;
 
 /* ================ PAGE FOOTER STYLES ================ */
 
+.page-footer {
+    background: #1e1823;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 .page-footer-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.02em;
+    max-width: 300px;
 }
 
+.page-footer-top-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 .contact-block {
     font-style: normal;
 }
